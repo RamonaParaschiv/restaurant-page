@@ -1,0 +1,63 @@
+<!-- Dupa modelul temelor anterioare adaugati continutul pentru pagina de contact ca in Fig 10.6. Meniul
+principal este comun (se actualizeaza linkul active). Schema de culori trebuie sa fie similara. Se vor
+adauga si stilurile aferente paginii de contact. -->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>tema 10 contact</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/settings.css">
+        <link rel="stylesheet" href="css/tema-10.css">
+    </head>
+    <body>
+      <nav class="c1f">
+          <div class="logo">LI</div>
+          <ul>
+              <li>
+                  <a href="index.html"><span>Home</span></a>
+              </li>
+              <li>
+                  <a  href="meniu.html"><span>Meniu</span></a>
+              </li>
+              <li>
+                  <a href="comenzi.html"><span>Comenzi</span></a>
+              </li>
+              <li>
+                  <a class="active" href="contact.html"><span>Contact</span></a>
+              </li>
+          </ul>
+      </nav>
+      <main>
+        <div>
+          <form>
+            <div class="contact-left">
+              <textarea placeholder="Mesaj" name="mesaj"></textarea>
+            </div>
+            <div class="contact-right">
+                <div class="contact-container">
+                  <input placeholder="Nume" type="text" name="nume">
+                  <input placeholder="Email" type="text" name="email">
+                  <input placeholder="Telefon" type="text" name="telefon">
+                  <input type="submit" value="trimite">
+                </div>
+            </div>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="harta">
+             <img src="img/harta.png" alt="Harta">
+          </div>
+          <div class="date-contact">
+            <p><i class="fa fa-building"></i>&nbsp; Str. Lgst Nr. 81, Sector 3, Bucuresti</p>
+            <p><i class="fa fa-bus"></i>&nbsp; Autobuze: 100, 500, 900 <br> &nbsp; &nbsp; &nbsp; Statia: Foods &amp; Drinks</p>
+            <p><i class="fa fa-subway"></i>&nbsp; Metrou: Magistrala 9 <br> &nbsp; &nbsp; &nbsp; Statia: Master Chef</p>
+            <p><i class="fa fa-phone"></i>&nbsp; Telefon: 021.ABC.DD.EE</p>
+            <p>​<i class="fa fa-mobile"></i>&nbsp; Mobil: 07XX.YYY.ZZZ</p>
+          </div>
+        </div>
+      </main>
+      <footer class="c1f center">Tranzitii, Transformari, Animatii. &copy; </footer>
+    </body>
+  </html>

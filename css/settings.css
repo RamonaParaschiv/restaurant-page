@@ -1,0 +1,396 @@
+/* Setari generale */
+@font-face {
+    font-family: "Niconne";
+    src: url("../fonts/niconne/Niconne-Regular.ttf");
+}
+
+
+.color-primary-0 { color: #AE9A65; }	/* Main Primary color */
+.color-primary-1 { color: #FBEFCF; }
+.color-primary-2 { color: #D1C092; }
+.color-primary-3 { color: #897644; }  /* linie punctata */
+.color-primary-4 { color: #735E25; }  /* text */
+
+
+.c1f {
+    color: #735E25;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+.clearfix::after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+}
+
+.ib   {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+nav .logo {
+    position: absolute;
+    padding: 8px;
+    font: bold 28px niconne;
+    color: #fff;
+    background-color: #AE9A65;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav li {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+nav  a{
+    display: block;
+    color: #AE9A65;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+nav a span {
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #736A25;
+}
+
+nav a:hover span {
+    border-bottom: 2px solid #736A25;
+}
+
+nav .active span,
+nav .active:hover span {
+    border-bottom: 2px solid #AE9A65;
+}
+
+nav .active:hover {
+    color: #AE9A65;
+    cursor:  default;
+}
+
+header {
+    height: 200px;
+    width: 800px;
+    margin: 100px auto 20px;
+    position: relative;
+    background: #FFF;
+    overflow: hidden;
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1 {
+   font:30px Niconne;
+   color: #AE9A64;
+}
+
+/* Setari pagina home */
+.name {
+    font: bold 35px niconne;
+    color: #FFF;
+    background-color: #AE9A65;
+    opacity: 0.80;
+    position: absolute;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    margin:0;
+    z-index: 10;
+    width: 190px;
+}
+
+.desc {
+    font: bold 20px niconne;
+    color: #FFF;
+    background-color: #AE9A65;
+    opacity: 0.80;
+    position: absolute;
+    padding: 5px;
+    bottom: 0;
+    right: 0;
+    margin:0;
+    letter-spacing: 0.1em;
+    z-index: 10;
+    width: 190px;
+}
+
+
+main {
+    width: 800px;
+    margin: 0 auto 50px;
+    overflow: visible;
+}
+
+.meniu main,
+.comenzi main,
+.contact main {
+    margin-top: 100px;
+}
+
+
+section {
+    margin: 20px 0;
+}
+
+.program {
+    display: table;
+    width: 100%;
+}
+
+
+.program  ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.row {
+    display: table-row;
+}
+
+
+.cell {
+    background: #FFF;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.cell h1 {
+    text-transform: uppercase;
+    font: 500 italic 12px arial;
+    margin: 5px;
+}
+
+.cell h2 {
+    font: 25px Niconne;
+}
+
+.cell div {
+    display: inline-block;
+}
+
+.cell div:first-child {
+    width: 70px;
+}
+
+
+/* Setari pagina meniu */
+
+.btn {
+    background-color: #AE9A64;
+    color: #323232;
+    display: inline-block;
+    padding: 4px 15px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #A18F5F;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.meniu .item {
+    display: inline-block;
+    position: relative;
+}
+
+
+.meniu img {
+    height: 189px;
+}
+
+
+.meniu main ul,
+.comenzi main ul {
+    list-style-type: none;
+    padding: 0.1px 0;
+}
+
+.meniu main > ul {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+.lista {
+    margin: 10px 0;
+}
+
+.lista  div{
+    position: relative;
+    padding: 0 5px;
+    z-index: 2;
+    background-color: #FFF;
+}
+
+.lista .dot {
+    top: 0.75em;
+    border-top: 2px dotted #897644;
+    z-index: 0;
+}
+
+/* Setari pagina comenzi */
+.comenzi main {
+    position: relative;
+    padding: 0.1px;
+}
+
+.comenzi .panel {
+    height: 50px;
+    width: 400px;
+}
+
+.comenzi  input[type=radio] {
+    display: none;
+}
+
+.comenzi  input[type=radio] ~ ul {
+    display: none;
+}
+
+.categorii {
+    width: 400px;
+}
+
+.categorii label {
+    position: absolute;
+    top: 10px;
+    display: block;
+    color: #AE9A64;
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 0 ;
+    background: #AE9A65;
+    color: #FFF;
+}
+
+.comenzi main li {
+    font-size: 0.85em;
+}
+
+.categorii label,
+.comanda h1 {
+    font:25px Niconne;
+}
+
+.principale {
+    left: 20px;
+}
+
+.deserturi {
+    left: 180px;
+}
+
+.categorie {
+    border: 1px solid #AE9A65;
+}
+
+.categorie li {
+    position: relative;
+    border-bottom: 1px solid #AE9A65;
+    margin: 5px 0;
+}
+
+.categorie li:last-child {
+    margin-bottom: 0;
+    border-bottom: 1px solid transparent;
+}
+
+.categorie img {
+    display:  inline-block;
+    padding: 5px;
+    width: 100px;
+}
+
+.categorie .ib {
+    width: calc(100% - 115px);
+}
+
+.comenzi  input[type=radio]:checked ~ label {
+    background-color: #FFF;
+    color: #AE9A65;
+    border-left: 1px solid #AE9A65;
+    border-top: 1px solid #AE9A65;
+    border-right: 1px solid #AE9A65;
+}
+
+
+.comenzi  input[type=radio]:checked ~ ul {
+    display: block;
+}
+
+
+.comanda {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 380px;
+    padding: 5px;
+    border: 1px solid #AE9A65;
+}
+
+.categorie .btn {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+
+.comanda h1 {
+    padding: 0 10px;
+    background: #AE9A65;
+    color: #FFF;
+}
+
+.total {
+    border-top: 1px solid #897644;
+    padding: 0.1em 0.2em 0;
+}
